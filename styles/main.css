@@ -10,19 +10,19 @@ body {
 	padding: 0 var(--space-base);
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) {
 	.container {
 		width: 750px;
 	}
 }
 
-@media (max-width: 992px) {
+@media (min-width: 992px) {
 	.container {
 		width: 970px;
 	}
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
 	.container {
 		width: 1170px;
 	}
