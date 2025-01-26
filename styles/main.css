@@ -1,0 +1,30 @@
+/* Global RULES */
+
+/* 🔔🔔🔔 other reset's and box-sizing rules are in the My-Framewokr.css */
+body {
+	font-family: 'cairo', sans-serif;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 var(--space-base);
+}
+
+@media (max-width: 767px) {
+	.container {
+		width: 750px;
+	}
+}
+
+@media (max-width: 992px) {
+	.container {
+		width: 970px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.container {
+		width: 1170px;
+	}
+}
+/* End Global Rules */

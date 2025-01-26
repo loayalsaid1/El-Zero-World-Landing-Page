@@ -1,0 +1,72 @@
+:root {
+	--space-3xl: 5rem;
+	--space-2xl: 3.5rem;
+	--space-xl: 3rem;
+	--space-lg: 2rem;
+	--space-upper-mid: 1.5rem;
+	--space-upper-base: 1.25rem;
+	--space-base: 1rem; 
+	--space-m: .75rem;
+	--space-s: .5rem;
+	--space-xs: .25rem;
+	--space-2xs: .125rem;
+}
+
+/* Start Some Global Rules */
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: unset;
+}
+/* End Some Global Rules */
+.body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #ccc;
+	margin-top: var(--space-2xl);
+}
+
+.center-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.center-position {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	translate: -50% -50%;
+}
+
+.center-grid {
+	grid-area: 1 / 1 / 2 / 2;
+}
+.circle-100, .circle-200 {
+	border-radius: 50%;
+}
+.circle-100 {
+	width: 100px;
+	height: 100px;
+}
+.circle-200 {
+	width: 200px;
+	height: 200px;
+}
