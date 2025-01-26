@@ -171,6 +171,12 @@ header .main-nav-link:hover::before {
 	max-width: 100%;
 }
 
+@media (max-width: 767px) {
+	.hero .image {
+		display: none;
+	}
+}
+
 .hero i {
 	position: absolute;
 	bottom: var(--space-lg);
