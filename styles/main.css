@@ -2,6 +2,9 @@
 :root {
 	--main-color: #2196f3;
 	--main-color-alt: #1787e0;
+	--light-gray-1: #fafafa;
+
+	--transition-duration: .3s;
 }
 /* 🔔🔔🔔 other reset's and box-sizing rules are in the My-Framewokr.css */
 body {
@@ -39,6 +42,9 @@ body {
 
 header {
 	--header-height: 4.5rem;
+
+	box-shadow: 0 0 10px 0 #ddd;
+
 	background-color: white;
 }
 
@@ -54,7 +60,7 @@ header .container {
 }
 
 header .logo,
-header nav > ul a {
+header .main-nav-link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -71,6 +77,7 @@ header .logo {
 @media (max-width: 767px) {
 	header .logo {
 		height: 3.125rem;
+		padding-top: var(--space-s);
 	}
 }
 
@@ -79,17 +86,43 @@ header nav > ul {
 	align-items: center;
 }
 
-header nav > ul a {
+header .main-nav-link {
 	position: relative;
 
 	padding: 0 var(--space-lg);
+
+	transition: var(--transition-duration);
 }
 @media (max-width: 767px) {
-	header nav > ul a {
-		height: 2%;
+	header .main-nav-link {
+		height: 2.5rem;
 		padding: var(--space-m);
 
 		font-size: .875rem;
 	}
+}
+
+header .main-nav-link::before {
+	content: '';
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 0;
+	height: 4px;
+
+	background-color: var(--main-color);
+	transition: inherit;
+}
+
+header .main-nav-link:hover {
+	background-color: var(--light-gray-1);	
+
+	color: var(--main-color);
+}
+
+header .main-nav-link:hover::before {
+	width: 100%;
 }
 /* End Header */
