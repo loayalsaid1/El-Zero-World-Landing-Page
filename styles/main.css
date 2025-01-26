@@ -5,6 +5,8 @@
 	--light-gray-1: #fafafa;
 
 	--transition-duration: .3s;
+
+	--header-height: 4.5rem;
 }
 /* 🔔🔔🔔 other reset's and box-sizing rules are in the My-Framewokr.css */
 body {
@@ -36,13 +38,7 @@ body {
 /* End Global Rules */
 /* Start Header */
 /* Just temporarily */
-body {
-	background: #CCC;
-}
-
 header {
-	--header-height: 4.5rem;
-
 	box-shadow: 0 0 10px 0 #ddd;
 
 	background-color: white;
@@ -126,3 +122,62 @@ header .main-nav-link:hover::before {
 	width: 100%;
 }
 /* End Header */
+/* Start Landing */
+.hero {
+	position: relative;
+
+	/* Just a fallback */
+	height: calc(100vh - var(--header-height));
+	height: calc(100dvh - var(--header-height));
+}
+
+.hero::before {
+	content: '';
+
+	position: absolute;
+	top: -3rem;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	background-color: #ececec;
+
+	transform-origin: top left;
+	transform: skew(0deg, -6deg);
+
+	z-index: -1;
+}
+
+.hero .container {
+	display: flex;
+	align-items: center;
+
+	height: 100%;
+	padding-bottom: 7rem;
+}
+
+.hero .text h1 {
+	font-size: 2.5rem;
+}
+
+.hero .text p {
+	color: #777;
+	font-size: 1.5rem;
+	line-height: 1.5;
+}
+
+.hero img {
+	max-width: 100%;
+}
+
+.hero i {
+	position: absolute;
+	bottom: var(--space-lg);
+	left: 50%;
+
+	color: var(--main-color);
+
+	translate: -50%;
+}
+/* End Landing */
