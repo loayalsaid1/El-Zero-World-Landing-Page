@@ -1,5 +1,8 @@
 /* Global RULES */
-
+:root {
+	--main-color: #2196f3;
+	--main-color-alt: #1787e0;
+}
 /* 🔔🔔🔔 other reset's and box-sizing rules are in the My-Framewokr.css */
 body {
 	font-family: 'cairo', sans-serif;
@@ -28,3 +31,65 @@ body {
 	}
 }
 /* End Global Rules */
+/* Start Header */
+/* Just temporarily */
+body {
+	background: #CCC;
+}
+
+header {
+	--header-height: 4.5rem;
+	background-color: white;
+}
+
+header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+@media (max-width: 767px) {
+	header .container {
+		flex-direction: column;
+	}
+}
+
+header .logo,
+header nav > ul a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: var(--header-height);
+}
+
+header .logo {
+	color: var(--main-color);
+	font-weight: bold;
+	font-size: 1.6rem;
+}
+
+@media (max-width: 767px) {
+	header .logo {
+		height: 3.125rem;
+	}
+}
+
+header nav > ul {
+	display: flex;
+	align-items: center;
+}
+
+header nav > ul a {
+	position: relative;
+
+	padding: 0 var(--space-lg);
+}
+@media (max-width: 767px) {
+	header nav > ul a {
+		height: 2%;
+		padding: var(--space-m);
+
+		font-size: .875rem;
+	}
+}
+/* End Header */
