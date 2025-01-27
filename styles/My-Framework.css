@@ -35,6 +35,11 @@ a {
 	text-decoration: none;
 	color: unset;
 }
+
+img {
+	max-width: 100%;
+}
+
 /* End Some Global Rules */
 .body {
 	font-family: Arial, Helvetica, sans-serif;
