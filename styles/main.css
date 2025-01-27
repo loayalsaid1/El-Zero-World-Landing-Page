@@ -88,6 +88,8 @@ header .main-nav-link {
 
 	padding: 0 var(--space-lg);
 
+	font-size: 1.125rem;
+
 	transition: var(--main-transition-duration);
 }
 @media (max-width: 767px) {
