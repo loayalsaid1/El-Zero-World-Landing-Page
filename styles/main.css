@@ -183,6 +183,8 @@ header .mega-menu .links {
 }
 
 header .mega-menu .links a {
+	position: relative;
+
 	display: block;
 
 	min-width: 250px;
@@ -191,6 +193,27 @@ header .mega-menu .links a {
 	color: var(--main-color);
 	font-size: 1.125rem;
 	font-weight: bold;
+}
+
+header .mega-menu .links a::before {
+	content: '';
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 0;
+	height: 100%;
+
+	background-color: var(--light-gray-1);
+
+	transition: var(--main-transition-duration);
+
+	z-index: -1;
+}
+
+header .mega-menu .links a:hover::before {
+	width: 100%;
 }
 
 header .mega-menu .links a i {
