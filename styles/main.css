@@ -49,28 +49,24 @@ section {
 	width: fit-content;
 	margin: 0 auto;
 	margin-bottom: 4rem;
-	padding: var(--space-s) var(--space-upper-base);
+	padding: var(--space-m) var(--space-upper-base);
 	border: 2px solid black;
 
 	text-align: center;
 	font-size: 1.875rem;
 	font-weight: bold;
 	text-transform: uppercase;
+	transition: var(--animation-duration);
 }
 
 .section-heading h2:hover {
-	animation: whatever var(--animation-duration) forwards calc(var(--animation-duration) / 2);
+	border-color: white;
+	
+	color: white;
+
+	transition-delay: var(--animation-duration);
 }
 
-@keyframes whatever {
-	to {
-		border-color: var(--main-color);
-
-		background-color: var(--main-color);
-
-		color: white;
-	}
-}
 
 .section-heading h2::before,
 .section-heading h2::after {
@@ -107,19 +103,19 @@ section {
 }
 
 @keyframes fill-half {
-	50%, 100% {
+	50% {
 		width: .75rem;
 	height: .75rem;
 	border-radius: 50%;
-		transform: translateX(0);
+	transform: translateX(0);
 	}
 	
 	100% {
 		height: 100%;
 		width: 50%;
 		border-radius: 0;
-		
-		/* transform: translateX(0); */
+
+		transform: translateX(0);
 	}
 }
 
