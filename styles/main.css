@@ -413,13 +413,14 @@ header .mega-menu .links a i {
 .articles .boxes {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(15.5rem, 1fr));
-	gap: var(--space-lg);
+	gap: var(--space-xl);
 }
 
 .articles article {
-	border-radius: 5px;
-	box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+	border-radius: 7px;
 	overflow: hidden;
+	
+	box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
 
 	transition: var(--main-transition-duration);
 }
@@ -458,11 +459,11 @@ header .mega-menu .links a i {
 	font-size: .9rem;
 }
 .articles article:hover .footer i {
-	animation: move-left .5s infinite linear;
+	animation: move-left .6s infinite linear;
 }
 @keyframes move-left {
 	to {
-		translate: 15px;
+		translate: 10px;
 	}
 }
 /* End Aricles */
