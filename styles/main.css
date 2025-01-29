@@ -55,6 +55,7 @@ section {
 	text-align: center;
 	font-size: 1.875rem;
 	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .section-heading h2:hover {
@@ -423,6 +424,13 @@ header .mega-menu .links a i {
 	border-radius: 5px;
 	box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
 	overflow: hidden;
+
+	transition: var(--main-transition-duration);
+}
+
+.articles article:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
 }
 
 .articles .text {
@@ -453,5 +461,12 @@ header .mega-menu .links a i {
 .articles article .footer i {
 	font-size: .9rem;
 }
-
+.articles article:hover .footer i {
+	animation: move-left .5s infinite linear;
+}
+@keyframes move-left {
+	to {
+		translate: 15px;
+	}
+}
 /* End Aricles */
