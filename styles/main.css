@@ -4,6 +4,8 @@
 	--main-color-alt: #1787e0;
 	--light-gray-1: #fafafa;
 
+	--sections-main-background: #ececec;
+
 	--main-transition-duration: .3s;
 
 	--header-height: 4.5rem;
@@ -467,3 +469,27 @@ header .mega-menu .links a i {
 	}
 }
 /* End Aricles */
+.gellery {
+	background-color: var(--sections-main-background);
+}
+
+.gellery .boxes {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+	/* It's wierd I know */
+	/* Otherwise i'll just do something more wierd.. like mid-lg after lg and before xl..  */
+	/* Dont' like it? .. Give me something more created in a comment or a pull request */
+	/* I have no idea why i'm writing this and not just go quickly check any AI to help with that */
+	/* Stop writing. .................................. */
+	gap: calc(var(--space-xl) - .25rem);
+}
+
+.gellery .box {
+	padding: var(--space-base);
+
+	background-color: white;
+
+	box-shadow:
+		0 12px 20px 0 rgb(0 0 0 / 12.5%),
+		0 4px 5px 0 rgb(0 0 0 / 10%);	
+}
