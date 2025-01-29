@@ -35,6 +35,10 @@ body {
 		width: 1170px;
 	}
 }
+
+section {
+	padding: var(--space-2xl) 0;
+}
 /* End Global Rules */
 /* Start Components */
 .section-heading  h2{
@@ -349,7 +353,7 @@ header .mega-menu .links a i {
 }
 
 .hero .text p {
-	color: #777;
+	color: #666;
 	font-size: 1.5rem;
 	line-height: 1.5;
 }
@@ -408,3 +412,46 @@ header .mega-menu .links a i {
 	}
 }
 /* End Landing */
+/* Start Aricles */
+.articles .boxes {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(15.5rem, 1fr));
+	gap: var(--space-lg);
+}
+
+.articles article {
+	border-radius: 5px;
+	box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+	overflow: hidden;
+}
+
+.articles .text {
+	padding: var(--space-upper-base);
+	border-bottom: 1px solid #e6e6e7;
+}
+
+.articles .text h3 {
+	margin-bottom: var(--space-s);
+}
+
+.articles .text p {
+	color: #777;
+	line-height: 1.5;
+}
+
+.articles article .footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: var(--space-upper-base);
+
+	color: var(--main-color);
+	font-weight: bold;
+}
+
+.articles article .footer i {
+	font-size: .9rem;
+}
+
+/* End Aricles */
