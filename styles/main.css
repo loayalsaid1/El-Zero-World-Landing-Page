@@ -39,7 +39,7 @@ body {
 }
 
 section {
-	padding: var(--space-2xl) 0;
+	padding: var(--space-3xl) 0;
 }
 /* End Global Rules */
 /* Start Components */
@@ -58,7 +58,10 @@ section {
 	font-size: 1.875rem;
 	font-weight: bold;
 	text-transform: uppercase;
+	
 	transition: var(--animation-duration);
+
+	z-index: 2;
 }
 
 .section-heading h2:hover {
