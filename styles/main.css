@@ -472,13 +472,13 @@ header .mega-menu .links a i {
 	}
 }
 /* End Aricles */
-/* Start Gellery */
-.gellery {
+/* Start Gallery */
+.gallery {
 	position: relative;
 	background-color: var(--sections-main-background);
 }
 
-.gellery::before {
+.gallery::before {
 	content: '';
 
 	position: absolute;
@@ -494,7 +494,7 @@ header .mega-menu .links a i {
 		linear-gradient(to bottom left, white 25%, transparent 25%);
 }
 
-.gellery .boxes {
+.gallery .boxes {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
 	/* It's wierd I know */
@@ -505,7 +505,7 @@ header .mega-menu .links a i {
 	gap: calc(var(--space-xl) - .25rem);
 }
 
-.gellery .box {
+.gallery .box {
 	padding: var(--space-base);
 
 	background-color: white;
@@ -515,19 +515,19 @@ header .mega-menu .links a i {
 		0 2px 4px 0 rgb(0 0 0 / 10%);	
 }
 
-.gellery .image {
+.gallery .image {
 	position: relative;
 
 	overflow: hidden;
 }
 
-.gellery .box:hover img {
+.gallery .box:hover img {
 	transition: var(--main-transition-duration);
 
 	transform: rotate(5deg) scale(1.1);
 }
 
-.gellery .image::before {
+.gallery .image::before {
 	content: '';
 
 	position: absolute;
@@ -545,7 +545,7 @@ header .mega-menu .links a i {
 	z-index: 10;
 }
 
-.gellery .box:hover .image::before {
+.gallery .box:hover .image::before {
 	animation: flash .7s;
 }
 
@@ -561,3 +561,4 @@ header .mega-menu .links a i {
 		opacity: 0;
 	}
 }
+/* End Gallery */
