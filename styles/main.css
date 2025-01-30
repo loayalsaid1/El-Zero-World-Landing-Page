@@ -654,8 +654,6 @@ header .mega-menu .links a i {
 }
 
 .features .feature a {
-	position: relative;
-
 	display: block;
 
 	width: fit-content;
@@ -665,36 +663,22 @@ header .mega-menu .links a i {
 	border-radius: 10px;;
 	overflow: hidden;
 
+	background: linear-gradient(to right, rgb(var(--feature-theme-rgb)) 50%, transparent 50%);
+	background-size: 200% 100%;
+	background-position: right bottom;
+
 	color: rgb(var(--feature-theme-rgb));
 	font-size: 1.3rem;
 	font-weight: bold;
+
+	transition: var(--main-transition-duration);
 
 	z-index: 2;
 }
 
 .features .feature:hover a {
+	background-position: left bottom;
+
 	color: white;
 }
-
-.features .feature a::before {
-	content: '';
-
-	position: absolute;
-	top: 0;
-	left: 0;
-
-	width: 0;
-	height: 100%;
-
-	background-color: rgb(var(--feature-theme-rgb));
-
-	transition: var(--main-transition-duration);
-
-	z-index: -1;
-}
-
-.features .feature:hover a::before {
-	width: 100%;
-}
-
 /* End Features */
