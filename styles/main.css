@@ -605,6 +605,18 @@ header .mega-menu .links a i {
 	background-color: rgba(var(--feature-theme-rgb), .6);
 }
 
+.features .feature .image::after {
+	content: '';
+
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	
+	border-style: solid;
+	border-color: transparent transparent white transparent;
+	border-width: 0px 0px 150px 612px
+}
+
 .features .feature .text {
 	padding: var(--space-upper-mid);
 
