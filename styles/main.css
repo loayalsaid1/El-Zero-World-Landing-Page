@@ -611,10 +611,16 @@ header .mega-menu .links a i {
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	
+
 	border-style: solid;
 	border-color: transparent transparent white transparent;
-	border-width: 0px 0px 150px 612px
+	border-width: 0px 0px 170px 650px;
+
+	transition: var(--main-transition-duration);
+}
+
+.features .feature:hover .image::after {
+	border-right-width: 650px;
 }
 
 .features .feature .text {
@@ -648,6 +654,8 @@ header .mega-menu .links a i {
 }
 
 .features .feature a {
+	position: relative;
+
 	display: block;
 
 	width: fit-content;
@@ -655,9 +663,38 @@ header .mega-menu .links a i {
 	padding: var(--space-m) var(--space-upper-base);
 	border: 3px solid;
 	border-radius: 10px;;
+	overflow: hidden;
 
 	color: rgb(var(--feature-theme-rgb));
 	font-size: 1.3rem;
 	font-weight: bold;
+
+	z-index: 2;
 }
+
+.features .feature:hover a {
+	color: white;
+}
+
+.features .feature a::before {
+	content: '';
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: 0;
+	height: 100%;
+
+	background-color: rgb(var(--feature-theme-rgb));
+
+	transition: var(--main-transition-duration);
+
+	z-index: -1;
+}
+
+.features .feature:hover a::before {
+	width: 100%;
+}
+
 /* End Features */
