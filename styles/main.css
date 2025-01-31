@@ -682,3 +682,67 @@ header .mega-menu .links a i {
 	color: white;
 }
 /* End Features */
+/* Start Testimonials */
+.testimonials {
+	background-color: var(--sections-main-background);
+}
+
+.testimonials .boxes {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+	gap: var(--space-lg);
+}
+
+.testimonials .testimonial {
+	position: relative;
+
+	padding: var(--space-upper-base);
+	border-radius: 7px;
+
+	box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+
+	background-color: white;
+}
+
+.testimonials .testimonial img {
+	--border-width: 10px;
+	position: absolute;
+	top: 0;
+	right: calc(-1 * var(--border-width));
+
+	width: 6rem;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	border: var(--border-width) solid var(--sections-main-background);
+
+	transform: translateY(-50%);
+}
+.testimonials .testimonial h3,
+.testimonials .role,
+.testimonials .rate {
+	margin-bottom: var(--space-s);
+}
+
+.testimonials h3 {
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+.testimonials .role,
+.testimonials .text {
+	color: #777;
+}
+
+.testimonials .rate {
+	display: flex;
+	gap: var(--space-xs);
+}
+
+.testimonials .rate .filled {
+	color: gold;
+}
+
+.testimonials .testimonial .text {
+	line-height: 1.5;
+}
+/* End Testimonials */
