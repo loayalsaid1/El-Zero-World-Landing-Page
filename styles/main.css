@@ -817,12 +817,15 @@ header .mega-menu .links a i {
 	flex-direction: column;
 	justify-content: center;
 	align-items: stretch;
-	gap: var(--space-upper-mid);
 
 	min-width: var(--off-distance);
 
 	color: var(--text-light-grey);
 	text-align: center;
+}
+
+.team .box .socials a {
+	height: 2.5rem;
 }
 
 .team .text {
