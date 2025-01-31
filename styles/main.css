@@ -830,6 +830,9 @@ header .mega-menu .links a i {
 .team .box .socials a {
 	height: 2.5rem;
 }
+.team .socials a:hover {
+	color: var(--main-color);
+}
 
 .team .text {
 	margin-left: var(--off-distance);
