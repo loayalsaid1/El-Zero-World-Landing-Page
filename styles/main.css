@@ -3,6 +3,7 @@
 	--main-color: #2196f3;
 	--main-color-alt: #1787e0;
 	--light-gray-1: #fafafa;
+	--text-light-grey: #777;
 
 	--sections-main-background: #ececec;
 
@@ -445,7 +446,7 @@ header .mega-menu .links a i {
 }
 
 .articles .text p {
-	color: #777;
+	color: var(--text-light-grey);
 	line-height: 1.5;
 }
 
@@ -648,7 +649,8 @@ header .mega-menu .links a i {
 
 .features .feature p {
 	margin-bottom: var(--space-xl);
-	color: #777;
+
+	color: var(--text-light-grey);
 	font-size: 1.25rem;
 	line-height: 2;
 }
@@ -730,7 +732,7 @@ header .mega-menu .links a i {
 
 .testimonials .role,
 .testimonials .text {
-	color: #777;
+	color: var(--text-light-grey);
 }
 
 .testimonials .rate {
@@ -760,23 +762,40 @@ header .mega-menu .links a i {
 	position: relative;
 
 	padding-top: var(--off-distance);
-	
+
 	z-index: 10;
 }
 
-.team .box::before {
+.team .box::before,
+.team .box::after {
 	content: '';
 
 	position: absolute;
 	top: 0;
 	right: 0;
 
-	width: calc(100% - var(--off-distance));
 	height: 100%;
 	border-radius: 5px;
+}
+.team .box::before {
+	width: calc(100% - var(--off-distance));
 
 	background-color: #f3f3f3;
-	z-index: -1;
+
+	z-index: -20;
+}
+.team .box::after {
+	width: 0;
+
+	background-color: #e4e4e4;
+
+	transition: var(--main-transition-duration);
+
+	z-index: -10;
+}
+
+.team .box:hover::after {
+	width: calc(100% - var(--off-distance));
 }
 
 .team .box .visuals {
@@ -785,6 +804,12 @@ header .mega-menu .links a i {
 
 .team .box .visuals img {
 	border-radius: 10px;
+
+	transition: var(--main-transition-duration);
+}
+
+.team .box:hover .visuals img {
+	filter: grayscale(1);
 }
 
 .team .box .socials {
@@ -796,7 +821,7 @@ header .mega-menu .links a i {
 
 	min-width: var(--off-distance);
 
-	color: #777;
+	color: var(--text-light-grey);
 	text-align: center;
 }
 
@@ -809,5 +834,11 @@ header .mega-menu .links a i {
 	margin-bottom: var(--space-m);
 
 	color: var(--main-color);
+
+	transition: var(--main-transition-duration);
+}
+
+.team .box:hover h3 {
+	color: var(--text-light-grey);
 }
 /* End Team Members */
