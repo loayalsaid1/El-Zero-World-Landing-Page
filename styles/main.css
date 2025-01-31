@@ -789,9 +789,14 @@ header .mega-menu .links a i {
 
 	background-color: #e4e4e4;
 
-	transition: var(--main-transition-duration);
-
 	z-index: -10;
+}
+
+.team .box::after,
+.team .box .visuals img,
+.team h3,
+.team .box .socials a {
+	transition: var(--main-transition-duration);
 }
 
 .team .box:hover::after {
@@ -804,8 +809,6 @@ header .mega-menu .links a i {
 
 .team .box .visuals img {
 	border-radius: 10px;
-
-	transition: var(--main-transition-duration);
 }
 
 .team .box:hover .visuals img {
@@ -837,8 +840,6 @@ header .mega-menu .links a i {
 	margin-bottom: var(--space-m);
 
 	color: var(--main-color);
-
-	transition: var(--main-transition-duration);
 }
 
 .team .box:hover h3 {
