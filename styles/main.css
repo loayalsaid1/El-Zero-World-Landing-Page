@@ -746,3 +746,68 @@ header .mega-menu .links a i {
 	line-height: 1.5;
 }
 /* End Testimonials */
+/* Start Team Members */
+/* No pun intended */
+.team .members {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+	gap: var(--space-upper-mid);
+}
+
+.team .box {
+	--off-distance: var(--space-2xl);
+
+	position: relative;
+
+	padding-top: var(--off-distance);
+	
+	z-index: 10;
+}
+
+.team .box::before {
+	content: '';
+
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	width: calc(100% - var(--off-distance));
+	height: 100%;
+	border-radius: 5px;
+
+	background-color: #f3f3f3;
+	z-index: -1;
+}
+
+.team .box .visuals {
+	display: flex;
+}
+
+.team .box .visuals img {
+	border-radius: 10px;
+}
+
+.team .box .socials {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+	gap: var(--space-upper-mid);
+
+	min-width: var(--off-distance);
+
+	color: #777;
+	text-align: center;
+}
+
+.team .text {
+	margin-left: var(--off-distance);
+	padding: var(--space-base);
+}
+
+.team h3 {
+	margin-bottom: var(--space-m);
+
+	color: var(--main-color);
+}
+/* End Team Members */
