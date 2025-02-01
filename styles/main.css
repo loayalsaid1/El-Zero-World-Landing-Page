@@ -863,6 +863,8 @@ header .mega-menu .links a i {
 }
 
 .services .service {
+	position: relative;
+
 	padding-top: var(--space-lg);
 
 	box-shadow:
@@ -871,6 +873,36 @@ header .mega-menu .links a i {
 	background-color: white;
 
 	text-align: center;
+}
+
+.services .service,
+.services .service::before {
+	transition: var(--main-transition-duration);
+}
+
+.services .service:hover {
+	translate: 0 -10px;
+}
+
+.services .service::before {
+	--height: 4px;
+
+	content: '';
+
+	position: absolute;
+	top: calc(-1 * var(--height));
+	left: 50%;
+
+	width: 0;
+	height: var(--height);
+
+	background-color: var(--main-color);
+
+	translate: -50%;
+}
+
+.services .service:hover::before {
+	width: 100%;
 }
 
 .services .service i {
