@@ -1109,6 +1109,10 @@ header .mega-menu .links a i {
 	}
 }
 
+.events .main-content {
+	margin-bottom: var(--space-lg);
+}
+
 .events .main-content .info {
 	text-align: center;
 }
