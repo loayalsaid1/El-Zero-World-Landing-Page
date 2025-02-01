@@ -1103,9 +1103,13 @@ header .mega-menu .links a i {
 	max-width: 450px;
 }
 
-.events .main-content .info {
-	padding: var(--space-upper-base) var(--space-base);
+@media (max-width: 991px) {
+	.events img {
+		display: none;
+	}
+}
 
+.events .main-content .info {
 	text-align: center;
 }
 
@@ -1155,6 +1159,9 @@ header .mega-menu .links a i {
 	font-size: 1.19rem;
 }
 
+.events .subscribe {
+	padding: var(--space-m);
+}
 .events .subscribe form{
 	display: flex;
 	align-items: center;
@@ -1189,4 +1196,24 @@ header .mega-menu .links a i {
 	font-weight: bold;;
 }
 
+@media (max-width: 767px) {
+	.events .subscribe form input,
+	.events .subscribe form {
+		border-radius: 3px;
+	}
+
+	.events .subscribe form {
+		flex-direction: column;
+		align-items: stretch;
+		gap: var(--space-base);
+
+		width: 100%;
+
+		padding: var(--space-upper-base);
+	}
+
+	.events .subscribe input[name="email"] {
+		width: unset;
+	}
+}
 /* End Lastet Events */
