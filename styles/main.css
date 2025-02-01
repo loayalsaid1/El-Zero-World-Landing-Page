@@ -1002,3 +1002,53 @@ header .mega-menu .links a i {
 	);
 }
 /* End Our Skills */
+/* Start How It Works? */
+.work-steps {
+	background-color: var(--sections-main-background);
+}
+
+.work-steps .container,
+.work-steps .info ,
+.work-steps .step {
+	display: flex;
+	align-items: center;
+}
+
+.work-steps .container {
+	gap: var(--space-3xl);
+}
+
+.work-steps .info {
+	flex-direction: column;
+	gap: var(--space-base);
+
+	flex: 1;
+}
+
+.work-steps .step {
+	gap: var(--space-lg);
+
+	padding: var(--space-lg);
+	border-radius: 5px;
+	border: 2px solid white;
+
+	background-color: #f6f5f5;
+}
+
+.work-steps .step h3 {
+	margin-bottom: var(--space-m);
+
+	font-size: 1.4rem;
+}
+
+.work-steps .step p {
+	color: var(--text-light-grey);
+	font-size: 1.1rem;
+	line-height: 1.7;
+}
+
+.work-steps .info .image {
+	flex: 0 0 64px;
+}
+
+/* End How It Works? */
