@@ -1132,6 +1132,15 @@ header .mega-menu .links a i {
 	border-radius: 6px;
 }
 
+.events .time .unit,
+.events .time .unit .number {
+	transition: var(--main-transition-duration);
+}
+
+.events .time .unit:hover {
+	--time-border-color: var(--main-color);
+}
+
 .events .time .number {
 	padding: var(--space-base);
 	border-bottom: 1px solid var(--time-border-color);
@@ -1194,6 +1203,12 @@ header .mega-menu .links a i {
 	
 	color: white;
 	font-weight: bold;;
+
+	transition: var(--main-transition-duration);
+}
+
+.events .subscribe input[type="submit"]:hover {
+	background-color: var(--main-color-alt);
 }
 
 @media (max-width: 767px) {
