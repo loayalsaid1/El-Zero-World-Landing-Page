@@ -849,3 +849,73 @@ header .mega-menu .links a i {
 	color: var(--text-light-grey);
 }
 /* End Team Members */
+/* Start Services */
+.services {
+	background-color: var(--sections-main-background);
+}
+
+.services .boxes {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+	gap: var(--space-lg);
+
+	counter-reset: service-counter;
+}
+
+.services .service {
+	padding-top: var(--space-lg);
+
+	box-shadow:
+	rgba(0, 0, 0, 0.13) 0px 12px 20px 0px,
+	rgba(0, 0, 0, 0.12) 0px 2px 4px 0px;
+	background-color: white;
+
+	text-align: center;
+}
+
+.services .service i {
+	margin-bottom: var(--space-upper-mid);
+
+	color: #d5d5d5;
+}
+
+.services .service h3 {
+	margin-bottom: var(--space-lg);
+
+	color: var(--main-color);
+	font-size: 1.6rem;
+}
+
+.services .card-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: var(--space-m) 0;
+
+	background-image: linear-gradient(
+		120deg,
+		var(--main-color) 5em,
+		#d5d5d5 5em 7.5em,
+		#f9f9f9 7em
+	)
+}
+
+.services .service .card-footer::before {
+	content: '0' counter(service-counter);
+
+	padding-left: var(--space-upper-base);
+
+	color: white;
+	font-size: 1.8rem;
+	font-weight: bold;
+
+	counter-increment: service-counter;
+}
+
+.services .service .card-footer a {
+	padding: 0 var(--space-m);
+
+	color: var(--main-color);
+}
+/* End Services */
