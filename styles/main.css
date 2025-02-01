@@ -1092,5 +1092,101 @@ header .mega-menu .links a i {
 	/* For when teh screens get's smaller and the direction turns column */
 	max-width: 80px;
 }
-
 /* End How It Works? */
+/* Start Lastet Events */
+.events .main-content {
+	display: flex;
+	align-items: center;
+}
+
+.events img {
+	max-width: 450px;
+}
+
+.events .main-content .info {
+	padding: var(--space-upper-base) var(--space-base);
+
+	text-align: center;
+}
+
+.events .info .time {
+	display: flex;
+	justify-content: center;
+	gap: var(--space-s);
+
+	margin-bottom: var(--space-xl);
+}
+
+.events .time .unit {
+	--time-border-color: #d4d4d4;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	border: 1px solid var(--time-border-color);
+	border-radius: 6px;
+}
+
+.events .time .number {
+	padding: var(--space-base);
+	border-bottom: 1px solid var(--time-border-color);
+
+	color: var(--main-color);
+	font-size: 2.1rem;
+	font-weight: bold;
+}
+
+.events .time .text {
+	padding: var(--space-s) ;
+
+	font-size: .75rem;
+}
+
+.events .info h3 {
+	margin-bottom: var(--space-upper-base);
+
+	font-size: 1.9rem;
+}
+
+.events .info p {
+	color: var(--text-light-grey);
+	line-height: 1.7;
+	font-size: 1.19rem;
+}
+
+.events .subscribe form{
+	display: flex;
+	align-items: center;
+	gap: var(--space-upper-mid);
+
+	width: fit-content;
+	padding: var(--space-lg) var(--space-xl);
+	margin: var(--space-base) auto;
+
+	background-color: #f6f5f5;
+}
+
+.events .subscribe form,
+.events .subscribe input {
+	border-radius: 50px;
+}
+
+.events .subscribe input {
+	padding: var(--space-upper-base);
+	border: none;
+	outline: none;
+}
+
+.events .subscribe input[name="email"] {
+	width: 24rem;
+}
+
+.events .subscribe input[type="submit"] {
+	background-color: var(--main-color);
+	
+	color: white;
+	font-weight: bold;;
+}
+
+/* End Lastet Events */
