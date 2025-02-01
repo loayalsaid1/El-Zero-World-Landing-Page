@@ -1018,6 +1018,13 @@ header .mega-menu .links a i {
 	gap: var(--space-3xl);
 }
 
+@media (max-width: 991px) {
+	.work-steps .container {
+		flex-direction: column;
+		gap: var(--space-2xl);
+	}
+}
+
 .work-steps .info {
 	flex-direction: column;
 	gap: var(--space-base);
@@ -1035,6 +1042,13 @@ header .mega-menu .links a i {
 	background-color: #f6f5f5;
 }
 
+@media (max-width: 767px) {
+	.work-steps .info .step{
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
 .work-steps .step h3 {
 	margin-bottom: var(--space-m);
 
@@ -1049,6 +1063,8 @@ header .mega-menu .links a i {
 
 .work-steps .info .image {
 	flex: 0 0 64px;
+	/* For when teh screens get's smaller and the direction turns column */
+	max-width: 80px;
 }
 
 /* End How It Works? */
