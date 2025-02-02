@@ -1180,7 +1180,7 @@ header .mega-menu .links a i {
 	align-items: center;
 	gap: var(--space-upper-mid);
 
-	width: fit-content;
+	width: 37.5rem;
 	padding: var(--space-lg) var(--space-xl);
 	margin: var(--space-base) auto;
 
@@ -1199,7 +1199,7 @@ header .mega-menu .links a i {
 }
 
 .events .subscribe input[name="email"] {
-	width: 24rem;
+	flex: 1;
 }
 
 .events .subscribe input[type="submit"] {
