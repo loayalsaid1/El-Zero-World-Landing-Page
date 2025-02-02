@@ -1202,6 +1202,13 @@ header .mega-menu .links a i {
 	flex: 1;
 }
 
+.events .subscribe input[name="email"]::placeholder {
+	transition: opacity var(--main-transition-duration);
+}
+.events .subscribe input[name="email"]:focus::placeholder {
+	opacity: 0;
+}
+
 .events .subscribe input[type="submit"] {
 	background-color: var(--main-color);
 	
