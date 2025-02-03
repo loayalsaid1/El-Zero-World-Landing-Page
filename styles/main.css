@@ -1,3 +1,7 @@
+/* 🔔🔔🔔 🤚🛑🛑 */
+/* Next time.. Prefer margin-top over margin-bottom */
+
+
 /* Global RULES */
 :root {
 	--main-color: #2196f3;
@@ -1424,3 +1428,63 @@ header .mega-menu .links a i {
 	color: white;
 }
 /* End Pricing */
+/* Start Top Videos */
+.videos .holder {
+	--background-color: #f4f4f4;
+
+	display: flex;
+	justify-content: center;
+
+	border: 1px solid #ddd;
+
+	background-color: var(--background-color);
+}
+
+@media (max-width: 991px) {
+	.videos .holder {
+		flex-direction: column;
+	}
+}
+
+.videos .list .head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	min-width: 18.75rem;
+	padding: var(--space-upper-base);
+
+	font-weight: bold;
+}
+
+.videos .list .titles li {
+	padding: var(--space-upper-base);
+	border-top: 1px solid #ececec;
+
+	background-color: white;
+}
+
+.videos .list .length {
+	display: block;
+
+	margin-top: var(--space-m);
+
+	color: var(--text-light-grey);
+}
+
+.videos .preview {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	padding: var(--space-s);
+
+	background-color: #e2e2e2;
+}
+
+.videos .preview .info {
+	margin-top: var(--space-m);
+	padding: var(--space-upper-base);
+	background-color: white;
+}
+/* End Top Videos */
