@@ -1417,7 +1417,9 @@ header .mega-menu .links a i {
 }
 
 .pricing .plan a:hover {
-	background-color: var(--main-color);
+	border-color: var(--main-color-alt);
+
+	background-color: var(--main-color-alt);
 
 	color: white;
 }
