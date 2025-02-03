@@ -1292,6 +1292,12 @@ header .mega-menu .links a i {
 	z-index: 1;
 }
 
+@media ( min-width: 1200px ) {
+	.pricing .plan.most-popular {
+		translate: 0 -.65rem
+	}
+}
+
 .pricing .plan::before,
 .pricing .plan::after {
 	content: '';
