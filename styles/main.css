@@ -1462,6 +1462,16 @@ header .mega-menu .links a i {
 	border-top: 1px solid #ececec;
 
 	background-color: white;
+
+	transition: var(--main-transition-duration);
+
+	cursor: pointer;
+}
+
+.videos .titles li:hover {
+	background-color: #fafafa;
+
+	color: var(--main-color);
 }
 
 .videos .list .length {
