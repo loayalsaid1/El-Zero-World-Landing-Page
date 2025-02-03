@@ -1279,11 +1279,6 @@ header .mega-menu .links a i {
 .pricing .plan {
 	position: relative;
 
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-
 	padding: var(--space-lg) 0;
 
 	box-shadow:
@@ -1291,11 +1286,12 @@ header .mega-menu .links a i {
 		0 2px 4px 0 rgb(0 0 0 / 12%);
 
 	background-color: white;
+
+	text-align: center;
+
 	z-index: 1;
 }
-.pricing .plan > * {
-	z-index: 10;
-}
+
 .pricing .plan::before,
 .pricing .plan::after {
 	content: '';
@@ -1308,6 +1304,8 @@ header .mega-menu .links a i {
 	background-color: #f6f6f6;
 
 	transition:.5s;
+
+	z-index: -1;
 }
 
 .pricing .plan::before {
@@ -1380,10 +1378,6 @@ header .mega-menu .links a i {
 	color: var(--text-light-grey);
 }
 
-.pricing .features {
-	align-self: stretch;
-}
-
 .pricing .features li {
 	display: flex;
 	align-items: center;
@@ -1398,11 +1392,14 @@ header .mega-menu .links a i {
 	color: var(--main-color);
 	font-weight: 900;
 	font-size: 1.25rem;
-	font-family: 'Font Awesome 5 Free';
+	font-family: 'Font Awesome 6 Free';
 }
 
 .pricing .plan a {
-	margin-bottom: var(--space-m);
+	display: block;
+
+	width: fit-content;
+	margin: 0 auto var(--space-m);
 	padding: var(--space-base) var(--space-upper-base);
 	border: 2px solid var(--main-color);
 	border-radius: 7px;
