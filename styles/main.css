@@ -1291,6 +1291,37 @@ header .mega-menu .links a i {
 		0 2px 4px 0 rgb(0 0 0 / 12%);
 
 	background-color: white;
+	z-index: 1;
+}
+.pricing .plan > * {
+	z-index: 10;
+}
+.pricing .plan::before,
+.pricing .plan::after {
+	content: '';
+
+	position: absolute;
+
+	width: 0;
+	height: 50%;
+
+	background-color: #f6f6f6;
+
+	transition:.5s;
+}
+
+.pricing .plan::before {
+	top: 0;
+	left: 0;
+}
+.pricing .plan::after {
+	top: 50%;
+	right: 0;
+}
+
+.pricing .plan:hover::before,
+.pricing .plan:hover::after{
+	width: 100%;
 }
 
 .pricing .plan .label {
@@ -1378,5 +1409,13 @@ header .mega-menu .links a i {
 
 	color: var(--main-color);
 	font-weight: bold;
+
+	transition: var(--main-transition-duration);
+}
+
+.pricing .plan a:hover {
+	background-color: var(--main-color);
+
+	color: white;
 }
 /* End Pricing */
