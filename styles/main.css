@@ -1269,4 +1269,89 @@ header .mega-menu .links a i {
 	position: relative;
 	z-index: 10;
 }
+
+.pricing .plans {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+	gap: var(--space-lg);
+}
+
+.pricing .plan {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	padding: var(--space-lg) 0;
+
+	box-shadow:
+		0 12px 20px 0 rgb(0 0 0 / 13%),
+		0 2px 4px 0 rgb(0 0 0 / 12%);
+
+	background-color: white;
+}
+
+.pricing .plan h3,
+.pricing .plan img,
+.pricing .plan .features {
+	margin-bottom: var(--space-lg);
+}
+
+.pricing .plan h3{
+	font-size: 1.5rem;
+}
+
+.pricing .plan img {
+	width: 5rem;
+}
+
+.pricing .plan .price {
+	margin-bottom: var(--space-upper-base);
+
+	text-align: center;
+}
+
+.pricing .plan .value {
+	margin-bottom: var(--space-2xs);
+	
+	color: var(--main-color);
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+.pricing .plan .period {
+	color: var(--text-light-grey);
+}
+
+.pricing .features {
+	align-self: stretch;
+}
+
+.pricing .features li {
+	display: flex;
+	align-items: center;
+	padding: var(--space-upper-base);
+	border-top: 1px solid #eee;
+}
+.pricing .features li::before {
+	content: '\f00c';
+
+	margin-right: var(--space-m);
+
+	color: var(--main-color);
+	font-weight: 900;
+	font-size: 1.25rem;
+	font-family: 'Font Awesome 5 Free';
+}
+
+.pricing .plan a {
+	margin-bottom: var(--space-m);
+	padding: var(--space-base) var(--space-upper-base);
+	border: 2px solid var(--main-color);
+	border-radius: 7px;
+
+	color: var(--main-color);
+	font-weight: bold;
+}
+
 /* End Pricing */
