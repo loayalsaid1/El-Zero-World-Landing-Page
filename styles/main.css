@@ -1250,11 +1250,23 @@ header .mega-menu .links a i {
 	background-color: var(--sections-main-background);
 }
 
-.pricing::before {
+.pricing::before,
+.pricing::after {
+	--image-vertical-off-distance: 200px;
 	content: url('../images/dots.png');
 
 	position: absolute;
-	top: 50%;
+}
+.pricing::before {
+	top: var(--image-vertical-off-distance);
 	right: 0;
+}
+.pricing::after {
+	bottom: var(--image-vertical-off-distance);
+	left: 0;
+}
+.pricing > * {
+	position: relative;
+	z-index: 10;
 }
 /* End Pricing */
