@@ -1277,6 +1277,8 @@ header .mega-menu .links a i {
 }
 
 .pricing .plan {
+	position: relative;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -1289,6 +1291,30 @@ header .mega-menu .links a i {
 		0 2px 4px 0 rgb(0 0 0 / 12%);
 
 	background-color: white;
+}
+
+.pricing .plan .label {
+	--arrow-tip-size: 1.25rem;
+
+	position: absolute;
+	top: 0;
+	left: calc(100% - var(--space-base));
+
+	padding: var(--space-m);
+	padding-right: var(--space-lg);
+
+	background-color: var(--main-color);
+
+	color: white;
+	font-size: 1.1rem;
+	font-weight: bold;
+	text-wrap: nowrap;
+
+	transform-origin: top left;
+	transform: rotate(.25turn);
+
+	/* Make the inward pointing arrow tip */
+	clip-path: polygon(0 0, 100% 0, calc(100% - var(--arrow-tip-size)) 50%, 100% 100%, 0 100%);
 }
 
 .pricing .plan h3,
@@ -1353,5 +1379,4 @@ header .mega-menu .links a i {
 	color: var(--main-color);
 	font-weight: bold;
 }
-
 /* End Pricing */
