@@ -1243,3 +1243,18 @@ header .mega-menu .links a i {
 	}
 }
 /* End Lastet Events */
+/* Start Pricing */
+.pricing {
+	position: relative;
+
+	background-color: var(--sections-main-background);
+}
+
+.pricing::before {
+	content: url('../images/dots.png');
+
+	position: absolute;
+	top: 50%;
+	right: 0;
+}
+/* End Pricing */
