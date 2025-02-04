@@ -8,6 +8,7 @@
 	--main-color-alt: #1787e0;
 	--light-gray-1: #fafafa;
 	--text-light-grey: #777;
+	--text-dark-grey: #B9B9B9;
 
 	--sections-main-background: #ececec;
 
@@ -1720,3 +1721,103 @@ header .mega-menu .links a i {
 	background-color: var(--main-color-alt);
 }
 /* End Discount */
+/* Start Footer */
+footer {
+	padding-top: var(--space-3xl);
+	background-color: #191919;
+
+	color: var(--text-dark-grey);
+}
+
+footer p {
+	line-height: 2;
+}
+
+footer .container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(15.625rem, 1fr));
+	gap: var(--space-lg);
+
+	margin-bottom: var(--space-2xl);
+}
+
+footer h3 {
+	margin-bottom: var(--space-upper-base);
+
+	color: white;
+	font-size: 3.125rem;
+}
+
+footer .main .socials {
+	display: flex;
+	gap: var(--space-s);
+
+	margin-bottom: var(--space-base);
+}
+
+footer .socials i {
+	padding: var(--space-base);
+
+	background-color: #313131;
+}
+
+footer .links li {
+	padding: var(--space-base) 0;
+	border-bottom: 1px solid #444;
+}
+footer .links li:last-child {
+	border-bottom: unset;
+}
+
+footer .links a::before {
+	content: "\f101";
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+
+	margin-right: var(--space-m);
+
+	color: var(--main-color);
+}
+
+footer .address {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-upper-mid);
+}
+
+footer .address .line {
+	display: flex;
+	align-items: center;
+	gap: var(--space-m);
+}
+
+footer .address .line i {
+	color: var(--main-color);
+	font-size: 1.55rem;
+}
+
+footer .gellery {
+	display: flex;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	gap: var(--space-s);
+}
+
+footer .gellery img {
+	width: 78px;
+	border: 3px solid white;
+}
+
+footer .copyright {
+	padding: var(--space-base) var(--space-m);
+	border-top: 1px solid #444;
+
+	text-align: center;
+	color: white;
+}
+
+footer .copyright a {
+	color: var(--main-color);
+	font-weight: bold;
+}
+/* End Footer */
