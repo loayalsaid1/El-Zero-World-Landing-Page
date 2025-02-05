@@ -1759,6 +1759,18 @@ footer .socials i {
 	padding: var(--space-base);
 
 	background-color: #313131;
+
+	transition: var(--main-transition-duration);
+}
+
+footer .socials .facebook:hover i {
+	background-color: #1877b2
+}
+footer .socials .twitter:hover i {
+	background-color: #1DA1F2
+}
+footer .socials .youtube:hover i {
+	background-color: #F00
 }
 
 footer .links li {
@@ -1767,6 +1779,18 @@ footer .links li {
 }
 footer .links li:last-child {
 	border-bottom: unset;
+}
+
+footer .links a {
+	display: block;
+	transition: .5s;
+}
+
+footer .links li:hover a{
+	color: white;
+	font-weight: bold;
+
+	transform: translateX(.75rem);
 }
 
 footer .links a::before {
