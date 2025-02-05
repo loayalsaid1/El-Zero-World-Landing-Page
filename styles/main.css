@@ -1773,6 +1773,16 @@ footer .socials .youtube:hover i {
 	background-color: #F00
 }
 
+@media (max-width: 767px) {
+	footer .main  {
+		text-align: center;
+	}
+
+	footer .main .socials {
+		justify-content: center;
+	}
+}
+
 footer .links li {
 	padding: var(--space-base) 0;
 	border-bottom: 1px solid #444;
@@ -1803,6 +1813,12 @@ footer .links a::before {
 	color: var(--main-color);
 }
 
+@media (max-width: 767px) {
+	footer .links a {
+		text-align: center;
+	}
+}
+
 footer .address {
 	display: flex;
 	flex-direction: column;
@@ -1815,16 +1831,29 @@ footer .address .line {
 	gap: var(--space-m);
 }
 
+@media (max-width: 767px) {
+	footer .address .line {
+		flex-direction: column;
+	}
+}
+
 footer .address .line i {
 	color: var(--main-color);
 	font-size: 1.55rem;
 }
+
 
 footer .gellery {
 	display: flex;
 	align-content: flex-start;
 	flex-wrap: wrap;
 	gap: var(--space-s);
+}
+
+@media (max-width: 767px) {
+	footer .gellery {
+		justify-content: center;
+	}
 }
 
 footer .gellery img {
