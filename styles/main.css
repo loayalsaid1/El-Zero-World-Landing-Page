@@ -1750,26 +1750,28 @@ footer h3 {
 
 footer .main .socials {
 	display: flex;
-	gap: var(--space-s);
+	gap: var(--space-m );
 
 	margin-bottom: var(--space-base);
 }
 
-footer .socials i {
-	padding: var(--space-base);
+footer .socials a {
+	width: 3.125rem;
+	aspect-ratio: 1;
 
 	background-color: #313131;
-
+	
+	font-size: 1.25rem;
 	transition: var(--main-transition-duration);
 }
 
-footer .socials .facebook:hover i {
+footer .socials .facebook:hover {
 	background-color: #1877b2
 }
-footer .socials .twitter:hover i {
+footer .socials .twitter:hover {
 	background-color: #1DA1F2
 }
-footer .socials .youtube:hover i {
+footer .socials .youtube:hover {
 	background-color: #F00
 }
 
@@ -1800,7 +1802,7 @@ footer .links li:hover a{
 	color: white;
 	font-weight: bold;
 
-	transform: translateX(.75rem);
+	transform: translateX(.7rem);
 }
 
 footer .links a::before {
@@ -1822,7 +1824,7 @@ footer .links a::before {
 footer .address {
 	display: flex;
 	flex-direction: column;
-	gap: var(--space-upper-mid);
+	gap: var(--space-lg);
 }
 
 footer .address .line {
@@ -1842,8 +1844,7 @@ footer .address .line i {
 	font-size: 1.55rem;
 }
 
-
-footer .gellery {
+ footer .gellery {
 	display: flex;
 	align-content: flex-start;
 	flex-wrap: wrap;
