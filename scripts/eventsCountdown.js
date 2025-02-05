@@ -5,9 +5,11 @@ const MS_PER_MINUTE = MS_PER_SECOND * 60;
 const MS_PER_HOUR = MS_PER_MINUTE * 60;
 const MS_PER_DAY = MS_PER_HOUR * 24;
 
+const CURRENT_YEAR = new Date().getFullYear();
+
 
 let countdown = setInterval(() => {
-	const endDate = new Date('Dec 31, 2025').getTime();
+	const endDate = new Date(`Dec 31, ${CURRENT_YEAR}`).getTime();
 	const currentDate = new Date().getTime();
 	const diffTime = endDate - currentDate;
 
