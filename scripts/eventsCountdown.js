@@ -11,7 +11,7 @@ let countdown = setInterval(() => {
 	const currentDate = new Date().getTime();
 	const diffTime = endDate - currentDate;
 
-	const days = Math.floor(diffTime / MS_PER_DAY);
+	const days = Math.floor(diffTime / MS_PER_DAY) % 100;
 	const hours = Math.floor((diffTime % MS_PER_DAY) / MS_PER_HOUR);
 	const minutes = Math.floor((diffTime % MS_PER_HOUR) / MS_PER_MINUTE);
 	const seconds = Math.floor((diffTime % MS_PER_MINUTE) / MS_PER_SECOND);
