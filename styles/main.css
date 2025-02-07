@@ -1535,6 +1535,11 @@ main .up-button.show {
 	background-color: #e2e2e2;
 }
 
+.videos .preview img {
+	aspect-ratio: 911 / 512;
+	object-fit: cover;
+}
+
 .videos .preview .info {
 	margin-top: var(--space-m);
 	padding: var(--space-upper-base);
