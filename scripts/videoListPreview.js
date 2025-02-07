@@ -14,13 +14,13 @@ const setActiveVideoTitle = (videoElement) => {
 // Set the previdw
 videos.forEach(titleElement => {
 	titleElement.addEventListener('click', (e) => {
+		setActiveVideoTitle(titleElement);
+
 		// Set the preview thumbnail
 		const imageName = titleElement.dataset.thumbnail;
 		thumbnail.src = `../images/${imageName}`;
 		// Set the preview title....
 		const title = titleElement.querySelector('.title').textContent;
 		nameParagraph.textContent = title;
-
-		setActiveVideoTitle(titleElement);
 	})
 })
