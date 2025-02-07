@@ -2,6 +2,7 @@ const section = document.querySelector('.videos');
 const videos = section.querySelectorAll('.titles li');
 const previewDiv = section.querySelector('.preview');
 const thumbnail = section.querySelector('.preview img');
+const previewVideo = section.querySelector('.preview .video');
 const nameParagraph = section.querySelector('.name');
 
 
@@ -15,6 +16,10 @@ const setActiveVideoTitle = (videoElement) => {
 videos.forEach(titleElement => {
 	titleElement.addEventListener('click', (e) => {
 		setActiveVideoTitle(titleElement);
+
+		// Make sure the video is hidden to only show the thumbnail
+		if (previewVideo.style.display !== 'none')
+			previewVideo.style.display = 'none';
 
 		// Set the preview thumbnail
 		const imageName = titleElement.dataset.thumbnail;
