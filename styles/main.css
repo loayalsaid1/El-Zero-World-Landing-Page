@@ -1511,6 +1511,7 @@ main .up-button.show {
 	cursor: pointer;
 }
 
+.videos .list .titles li.active,
 .videos .titles li:hover {
 	background-color: #fafafa;
 
@@ -1529,10 +1530,25 @@ main .up-button.show {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	flex: 1;
+
 
 	padding: var(--space-s);
 
 	background-color: #e2e2e2;
+}
+
+.videos .preview img  {
+	cursor: pointer;
+}
+
+.videos .preview .preview-content {
+	aspect-ratio: 911 / 512;
+	object-fit: cover;
+}
+
+.videos .preview .preview-content.video {
+	display: none;
 }
 
 .videos .preview .info {
