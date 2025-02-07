@@ -1530,6 +1530,8 @@ main .up-button.show {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	flex: 1;
+
 
 	padding: var(--space-s);
 
