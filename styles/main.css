@@ -1030,12 +1030,23 @@ main .up-button.show {
 	height: 2rem;
 
 	background-color: #d5d5d5;
-
+/* 
 	background-image: linear-gradient(
 		to right,
 		var(--main-color) var(--progress),
 		transparent var(--progress)
-	);
+	); */
+}
+
+.our-skills .progress-bar span.fill {
+	display: block;
+
+	height: 100%;
+	width: 0;
+
+	background-color: var(--main-color);
+
+	transition: .5s;
 }
 /* End Our Skills */
 /* Start How It Works? */

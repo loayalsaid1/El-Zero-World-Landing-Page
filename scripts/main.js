@@ -1,5 +1,7 @@
 import './eventsCountdown.js';
 import './scrollToTop.js';
+import './fillProgressOnView.js';
+
 
 // Fill a span in the events section with teh current year to keep relevat to the veiwer
 // Sinse this is just a mock Landing page
