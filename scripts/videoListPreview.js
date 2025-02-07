@@ -21,6 +21,8 @@ videos.forEach(titleElement => {
 		if (previewVideo.style.display !== 'none')
 			previewVideo.style.display = 'none';
 
+		thumbnail.style.display = 'block';
+
 		// Set the preview thumbnail
 		const imageName = titleElement.dataset.thumbnail;
 		thumbnail.src = `../images/${imageName}`;
@@ -28,4 +30,12 @@ videos.forEach(titleElement => {
 		const title = titleElement.querySelector('.title').textContent;
 		nameParagraph.textContent = title;
 	})
+})
+
+thumbnail.addEventListener('click', () => {
+	// hide the thumbnail
+	thumbnail.style.display = 'none';
+
+	// Show the video
+	previewVideo.style.display = 'block';
 })
