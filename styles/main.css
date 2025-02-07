@@ -1536,6 +1536,10 @@ main .up-button.show {
 	background-color: #e2e2e2;
 }
 
+.videos .preview img  {
+	cursor: pointer;
+}
+
 .videos .preview .preview-content {
 	aspect-ratio: 911 / 512;
 	object-fit: cover;
