@@ -335,6 +335,37 @@ header .mega-menu .links a i {
 	margin-right: var(--space-m);
 }
 /* End Mega-Menue */
+/* Start Scroll-To-Top button */
+main {
+	position: relative;
+}
+
+main .up-button {
+	position: fixed;
+	right: -3rem;
+	bottom: 3rem;
+
+	padding: var(--space-s) var(--space-m);
+	border: none;
+	border-radius: 5px;
+	outline: none;
+
+	box-shadow: 0 11px 15px -7px rgba(0,0,0,0.4), 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12);
+	background-color: var(--main-color);
+	
+	color: white;
+	font-size: 1.25rem;
+	font-weight: bold;
+
+	transition: .5s;
+
+	z-index: 1000;
+}
+
+main .up-button.show {
+	right: min(3rem, 5vw);
+}
+/* End Scroll-To-Top button */
 /* Start Landing */
 .hero {
 	position: relative;
