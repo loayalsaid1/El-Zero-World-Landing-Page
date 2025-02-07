@@ -1511,6 +1511,7 @@ main .up-button.show {
 	cursor: pointer;
 }
 
+.videos .list .titles li .active,
 .videos .titles li:hover {
 	background-color: #fafafa;
 
